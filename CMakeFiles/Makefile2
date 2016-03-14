@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/icub-tutorials/src/imageProcessing
+CMAKE_SOURCE_DIR = /root/src/imageProcessing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/icub-tutorials/src/imageProcessing
+CMAKE_BINARY_DIR = /root/src/imageProcessing
 
 #=============================================================================
 # Target rules for target CMakeFiles/findLocation.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /root/icub-tutorials/src/imageProcessing
 CMakeFiles/findLocation.dir/all:
 	$(MAKE) -f CMakeFiles/findLocation.dir/build.make CMakeFiles/findLocation.dir/depend
 	$(MAKE) -f CMakeFiles/findLocation.dir/build.make CMakeFiles/findLocation.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/icub-tutorials/src/imageProcessing/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/src/imageProcessing/CMakeFiles  1
 	@echo "Built target findLocation"
 .PHONY : CMakeFiles/findLocation.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/findLocation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/findLocation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/icub-tutorials/src/imageProcessing/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/src/imageProcessing/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/findLocation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/icub-tutorials/src/imageProcessing/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/src/imageProcessing/CMakeFiles 0
 .PHONY : CMakeFiles/findLocation.dir/rule
 
 # Convenience name for target.
@@ -85,41 +85,6 @@ CMakeFiles/findLocation.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/findLocation.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lookAtLocation.dir
-
-# All Build rule for target.
-CMakeFiles/lookAtLocation.dir/all:
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/depend
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/icub-tutorials/src/imageProcessing/CMakeFiles  2
-	@echo "Built target lookAtLocation"
-.PHONY : CMakeFiles/lookAtLocation.dir/all
-
-# Include target in all.
-all: CMakeFiles/lookAtLocation.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lookAtLocation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/icub-tutorials/src/imageProcessing/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lookAtLocation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/icub-tutorials/src/imageProcessing/CMakeFiles 0
-.PHONY : CMakeFiles/lookAtLocation.dir/rule
-
-# Convenience name for target.
-lookAtLocation: CMakeFiles/lookAtLocation.dir/rule
-.PHONY : lookAtLocation
-
-# clean rule for target.
-CMakeFiles/lookAtLocation.dir/clean:
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/clean
-.PHONY : CMakeFiles/lookAtLocation.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lookAtLocation.dir/clean
 .PHONY : clean
 
 #=============================================================================

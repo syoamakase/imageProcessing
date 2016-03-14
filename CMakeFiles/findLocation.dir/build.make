@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/icub-tutorials/src/imageProcessing
+CMAKE_SOURCE_DIR = /root/src/imageProcessing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/icub-tutorials/src/imageProcessing
+CMAKE_BINARY_DIR = /root/src/imageProcessing
 
 # Include any dependencies generated for this target.
 include CMakeFiles/findLocation.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/findLocation.dir/flags.make
 
 CMakeFiles/findLocation.dir/findLocation.cpp.o: CMakeFiles/findLocation.dir/flags.make
 CMakeFiles/findLocation.dir/findLocation.cpp.o: findLocation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/icub-tutorials/src/imageProcessing/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/src/imageProcessing/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/findLocation.dir/findLocation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/findLocation.dir/findLocation.cpp.o -c /root/icub-tutorials/src/imageProcessing/findLocation.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/findLocation.dir/findLocation.cpp.o -c /root/src/imageProcessing/findLocation.cpp
 
 CMakeFiles/findLocation.dir/findLocation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/findLocation.dir/findLocation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/icub-tutorials/src/imageProcessing/findLocation.cpp > CMakeFiles/findLocation.dir/findLocation.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/src/imageProcessing/findLocation.cpp > CMakeFiles/findLocation.dir/findLocation.cpp.i
 
 CMakeFiles/findLocation.dir/findLocation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/findLocation.dir/findLocation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/icub-tutorials/src/imageProcessing/findLocation.cpp -o CMakeFiles/findLocation.dir/findLocation.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/src/imageProcessing/findLocation.cpp -o CMakeFiles/findLocation.dir/findLocation.cpp.s
 
 CMakeFiles/findLocation.dir/findLocation.cpp.o.requires:
 .PHONY : CMakeFiles/findLocation.dir/findLocation.cpp.o.requires
@@ -104,6 +104,6 @@ CMakeFiles/findLocation.dir/clean:
 .PHONY : CMakeFiles/findLocation.dir/clean
 
 CMakeFiles/findLocation.dir/depend:
-	cd /root/icub-tutorials/src/imageProcessing && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/icub-tutorials/src/imageProcessing /root/icub-tutorials/src/imageProcessing /root/icub-tutorials/src/imageProcessing /root/icub-tutorials/src/imageProcessing /root/icub-tutorials/src/imageProcessing/CMakeFiles/findLocation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/src/imageProcessing && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/src/imageProcessing /root/src/imageProcessing /root/src/imageProcessing /root/src/imageProcessing /root/src/imageProcessing/CMakeFiles/findLocation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/findLocation.dir/depend
 

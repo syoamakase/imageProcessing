@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/icub-tutorials/src/imageProcessing
+CMAKE_SOURCE_DIR = /root/src/imageProcessing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/icub-tutorials/src/imageProcessing
+CMAKE_BINARY_DIR = /root/src/imageProcessing
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/icub-tutorials/src/imageProcessing/CMakeFiles /root/icub-tutorials/src/imageProcessing/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/src/imageProcessing/CMakeFiles /root/src/imageProcessing/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/icub-tutorials/src/imageProcessing/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/src/imageProcessing/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ findLocation/fast:
 	$(MAKE) -f CMakeFiles/findLocation.dir/build.make CMakeFiles/findLocation.dir/build
 .PHONY : findLocation/fast
 
-#=============================================================================
-# Target rules for targets named lookAtLocation
-
-# Build rule for target.
-lookAtLocation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lookAtLocation
-.PHONY : lookAtLocation
-
-# fast build rule for target.
-lookAtLocation/fast:
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/build
-.PHONY : lookAtLocation/fast
-
 findLocation.o: findLocation.cpp.o
 .PHONY : findLocation.o
 
@@ -148,30 +135,6 @@ findLocation.cpp.s:
 	$(MAKE) -f CMakeFiles/findLocation.dir/build.make CMakeFiles/findLocation.dir/findLocation.cpp.s
 .PHONY : findLocation.cpp.s
 
-lookAtLocation.o: lookAtLocation.cpp.o
-.PHONY : lookAtLocation.o
-
-# target to build an object file
-lookAtLocation.cpp.o:
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/lookAtLocation.cpp.o
-.PHONY : lookAtLocation.cpp.o
-
-lookAtLocation.i: lookAtLocation.cpp.i
-.PHONY : lookAtLocation.i
-
-# target to preprocess a source file
-lookAtLocation.cpp.i:
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/lookAtLocation.cpp.i
-.PHONY : lookAtLocation.cpp.i
-
-lookAtLocation.s: lookAtLocation.cpp.s
-.PHONY : lookAtLocation.s
-
-# target to generate assembly for a file
-lookAtLocation.cpp.s:
-	$(MAKE) -f CMakeFiles/lookAtLocation.dir/build.make CMakeFiles/lookAtLocation.dir/lookAtLocation.cpp.s
-.PHONY : lookAtLocation.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,14 +143,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... findLocation"
-	@echo "... lookAtLocation"
 	@echo "... rebuild_cache"
 	@echo "... findLocation.o"
 	@echo "... findLocation.i"
 	@echo "... findLocation.s"
-	@echo "... lookAtLocation.o"
-	@echo "... lookAtLocation.i"
-	@echo "... lookAtLocation.s"
 .PHONY : help
 
 

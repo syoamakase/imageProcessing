@@ -1,2 +1,1 @@
-/root/icub-tutorials/src/imageProcessing/CMakeFiles/findLocation.dir
-/root/icub-tutorials/src/imageProcessing/CMakeFiles/lookAtLocation.dir
+/root/src/imageProcessing/CMakeFiles/findLocation.dir

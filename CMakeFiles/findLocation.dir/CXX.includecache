@@ -6,16 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/root/icub-tutorials/src/imageProcessing/findLocation.cpp
+/root/src/imageProcessing/findLocation.cpp
 stdio.h
+-
+stdlib.h
 -
 yarp/os/all.h
 -
 yarp/sig/all.h
--
-iostream
--
-fstream
 -
 
 /usr/local/include/yarp/conf/api.h
