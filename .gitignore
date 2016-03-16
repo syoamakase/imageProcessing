@@ -1,4 +1,5 @@
-xvfb.txt
+xvfb.log
 CMakeFiles
 CMakeCache.txt
 Makefile
+cmake_install.cmake
