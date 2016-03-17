@@ -8,6 +8,10 @@ find_package(YARP REQUIRED)
 # add YARP include directories
 include_directories(${YARP_INCLUDE_DIRS})
 # set up our program
-add_executable(findLocation findLocation.cpp)
+add_executable(findLocationTCP findLocationTCP.cpp)
 # link with YARP libraries
-target_link_libraries(findLocation ${YARP_LIBRARIES})
+add_definitions(-std=c++11)
+target_link_libraries(findLocationTCP ${YARP_LIBRARIES})
+target_link_libraries(findLocationTCP boost_system)
+target_link_libraries(findLocationTCP boost_thread)
+target_link_libraries(findLocationTCP pthread)
